@@ -64,14 +64,14 @@ fun main() {
 //    }
 
     //map
-//    val fullMenu = cookies.map {
-//        "${it.name} - $${it.price}"
-//    }
-//
-//    println("Full Menu : ")
-//    fullMenu.forEach {
-//        println(it)
-//    }
+    val fullMenu = cookies.map {
+        "${it.name} - $${it.price}"
+    }
+
+    println("Full Menu : ")
+    fullMenu.forEach {
+        println(it)
+    }
 
     //filter
 //    val softBakedMenu = cookies.filter {
@@ -107,13 +107,13 @@ fun main() {
 
 
     //sortedBy
-    val alphabeticalMenu = cookies.sortedBy {
-        it.name
-    }
-
-    println("Alphabetical menu:")
-    alphabeticalMenu.forEach {
-        println(it.name)
-    }
+//    val alphabeticalMenu = cookies.sortedBy {
+//        it.name
+//    }
+//
+//    println("Alphabetical menu:")
+//    alphabeticalMenu.forEach {
+//        println(it.name)
+//    }
 
 }
