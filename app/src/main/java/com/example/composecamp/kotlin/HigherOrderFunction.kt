@@ -64,24 +64,24 @@ fun main() {
 //    }
 
     //map
-    val fullMenu = cookies.map {
-        "${it.name} - $${it.price}"
-    }
-
-    println("Full Menu : ")
-    fullMenu.forEach {
-        println(it)
-    }
-
-    //filter
-//    val softBakedMenu = cookies.filter {
-//        it.softBaked
+//    val fullMenu = cookies.map {
+//        "${it.name} - $${it.price}"
 //    }
 //
-//    println("Soft cookies:")
-//    softBakedMenu.forEach {
-//        println("${it.name} - $${it.price}")
+//    println("Full Menu : ")
+//    fullMenu.forEach {
+//        println(it)
 //    }
+
+    //filter
+    val softBakedMenu = cookies.filter {
+        it.softBaked
+    }
+
+    println("Soft cookies:")
+    softBakedMenu.forEach {
+        println("${it.name} - $${it.price}")
+    }
 
     //groupBy
 //    val groupedMenu = cookies.groupBy { it.softBaked }
